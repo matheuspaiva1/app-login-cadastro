@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Button from '../src/components/button/button'
 import Input from '../src/components/input/input'
 import Logincard from '../src/components/loginCard/loginCard'
@@ -12,6 +13,9 @@ export default function CadastroPage() {
           <Input type="email" placeholder="Digite seu email" />
           <Input type="password" placeholder="Digite sua senha" />
           <Button>Cadastrar</Button>
+          <Link href="/login">
+          Já possui uma Conta?
+          </Link>
         </form>
       </Logincard>
     </div>

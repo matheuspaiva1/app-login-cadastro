@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Button from '../src/components/button/button'
 import Input from '../src/components/input/input'
 import Logincard from '../src/components/loginCard/loginCard'
@@ -11,6 +12,9 @@ export default function LoginPage() {
           <Input type="email" placeholder="Digite seu email" />
           <Input type="password" placeholder="Digite sua senha" />
           <Button>Entrar</Button>
+          <Link href="/cadastro">
+          Ainda não possui uma Conta?
+          </Link>
         </form>
       </Logincard>
     </div>
