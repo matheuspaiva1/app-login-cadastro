@@ -4,6 +4,9 @@ import Input from '../src/components/input/input'
 import Logincard from '../src/components/loginCard/loginCard'
 import styles from '../styles/Login.module.css'
 import { useState } from 'react'
+import { useRouter } from 'next/router'
+
+import { setCookie } from 'cookies-next'
 
 
 
@@ -15,7 +18,7 @@ export default function LoginPage() {
 
   const [error, setError] = useState('')
 
-  const router = useRouter()
+  const router = useRouter('')
 
   const handleFormEdit = (event, name) => {
     setFormData({

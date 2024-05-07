@@ -31,7 +31,7 @@ export const getServerSideProps = async ({req, res}) => {
         permanent: false,
         destination: '/login',
 
-      }
+      },
       props: {}
     }
   }
